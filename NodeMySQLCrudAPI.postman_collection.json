@@ -1,0 +1,338 @@
+{
+	"info": {
+		"_postman_id": "eda3479b-3bad-4de0-b2be-45c5a5ecce87",
+		"name": "POST_BACKEND",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get All Employees List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"post"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Employee By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/post/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"post",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Employee By ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Rohit",
+							"type": "text"
+						},
+						{
+							"key": "slug",
+							"value": "Gupta",
+							"type": "text"
+						},
+						{
+							"key": "author",
+							"value": "rohit@test.com",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "0123456787",
+							"type": "text"
+						},
+					
+						{
+							"key": "status",
+							"value": "1",
+							"description": "1=Active, 0=Inactive",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/post/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"post",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Rahul",
+							"type": "text"
+						},
+						{
+							"key": "slug",
+							"value": "Gupta",
+							"type": "text"
+						},
+						{
+							"key": "author",
+							"value": "rahul@test.com",
+							"type": "text"
+						},
+						{
+							"key": "content",
+							"value": "0123456787",
+							"type": "text"
+						},
+			
+						{
+							"key": "status",
+							"value": "1",
+							"description": "1=Active, 0=Inactive",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/post/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"post",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Employee By ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/post/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"post",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All post_cat List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/postCat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"postCat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get post cat By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/postCat/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"postCat",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Post cat By ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Rohit",
+							"type": "text"
+						},
+						{
+							"key": "slug",
+							"value": "Gupta",
+							"type": "text"
+						},
+					
+					
+						{
+							"key": "status",
+							"value": "1",
+							"description": "1=Active, 0=Inactive",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/postCat/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"postCat",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Post cat",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "name",
+							"value": "Rahul",
+							"type": "text"
+						},
+						{
+							"key": "slug",
+							"value": "Gupta",
+							"type": "text"
+						},
+					
+			
+						{
+							"key": "status",
+							"value": "1",
+							"description": "1=Active, 0=Inactive",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/postCat/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"postCat",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Post cat By ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/v1/postCat/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"postCat",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
